@@ -38,7 +38,7 @@ const sections = [
   { title: 'Research', url: '/research' },
   { title: 'Activities', url: '/activities' },
   { title: 'Member', url: '/members' },
-  { title: 'Registration', url: '/registration' },
+  // { title: 'Registration', url: '/registration' },
 ];
 
 const noHeaderFooter = [
@@ -149,12 +149,13 @@ const ConditionalRoutes = () => {
         <ConditionalHeaderFooter title="IPAC Lab" sections={sections} urlPath={location.pathname}>
           <Routes>
             <Route path="" element={<Blog />} />
+            <Route path="/preview-ipac-lab-web" element={<Blog />} />
             <Route path="/about" element={<About />} />
             <Route path="/technology" element={<TechnologyPublic />} />
             <Route path="/home" element={<Blog />} />
             <Route path="/research" element={<ResearchPublic />} />
             <Route path="/login" element={<SignInSide setToken={setToken} />} />
-            <Route path="activities" element={<ActivitiesPublic />} />
+            <Route path="/activities" element={<ActivitiesPublic />} />
             <Route path="/members" element={<MembersPublic />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/reset-pw" element={<ResetPassword />} />
@@ -168,7 +169,7 @@ const ConditionalRoutes = () => {
 
 function App() {
   return (
-    <Router>
+    <Router basename='/preview-ipac-lab-web'>
       <ConditionalRoutes />
     </Router>
   );
