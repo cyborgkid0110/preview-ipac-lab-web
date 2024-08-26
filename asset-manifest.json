@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/preview-ipac-lab-web/static/css/main.303d0bbc.css",
-    "main.js": "/preview-ipac-lab-web/static/js/main.e473727d.js",
+    "main.js": "/preview-ipac-lab-web/static/js/main.a96642fa.js",
     "static/media/blog-post.1.md": "/preview-ipac-lab-web/static/media/blog-post.1.0c315da1f0a7af641a3a.md",
     "index.html": "/preview-ipac-lab-web/index.html",
     "static/media/blog-post.2.md": "/preview-ipac-lab-web/static/media/blog-post.2.bec33d7c8bf27858ce0c.md",
     "static/media/blog-post.3.md": "/preview-ipac-lab-web/static/media/blog-post.3.0a90113db17c3659cca0.md",
     "main.303d0bbc.css.map": "/preview-ipac-lab-web/static/css/main.303d0bbc.css.map",
-    "main.e473727d.js.map": "/preview-ipac-lab-web/static/js/main.e473727d.js.map"
+    "main.a96642fa.js.map": "/preview-ipac-lab-web/static/js/main.a96642fa.js.map"
   },
   "entrypoints": [
     "static/css/main.303d0bbc.css",
-    "static/js/main.e473727d.js"
+    "static/js/main.a96642fa.js"
   ]
 }
