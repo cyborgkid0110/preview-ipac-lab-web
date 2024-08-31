@@ -6,12 +6,14 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import { Link as LinkURL } from 'react-router-dom';
 import Profile from './Profile';
-import { AppBar, Slide, useScrollTrigger } from '@mui/material';
+import { AppBar, Box, Slide, useMediaQuery, useScrollTrigger } from '@mui/material';
 import { useTheme } from '@emotion/react';
+import logo_lab from '../pic/logo_lab.png'
 
 function Header(props) {
   const theme = useTheme();
   const { sections, title } = props;
+  const isMdUp = useMediaQuery(theme.breakpoints.up('md'));
 
   function HideOnScroll(props) {
     const { children } = props;
@@ -37,27 +39,59 @@ function Header(props) {
     );
   }
 
+  const TabList = ({isMdUp}) => {
+    if (isMdUp === true) return (
+      <>
+        {sections.map((section) => (
+          <LinkURL key={section.title} to={section.url}>
+            <Link color="inherit" noWrap sx={{ p: 1, flexShrink: 0 }}>
+              <Button variant="large" onClick={() => window.scrollTo(0, 0)}>
+                <Typography variant="h5" color="black">
+                  {section.title}
+                </Typography>
+              </Button>
+            </Link>
+          </LinkURL>
+        ))}
+      </>
+    )
+    else return <></>
+  }
+
   return (
     <React.Fragment>
       <HideOnScroll>
-        <Toolbar sx={{
-          backgroundColor: 'transparent',
-        }}>
-          <Button size="small">
-            <Typography variant="h6">Icon</Typography>
-          </Button>
+        <Toolbar sx={{ backgroundColor: 'transparent',}} style={{ paddingLeft: isMdUp ? 5 : 24}}>
+          {isMdUp ?
+          <Box 
+            component='img'
+            src={logo_lab}
+            sx={{
+              objectFit: 'cover',
+              maxWidth: '80px',
+              flexShrink: 0, // Prevent the image from shrinking
+            }}
+          />
+          : <></>
+          }
           <Typography
+            position='relative'
             component="h2"
             variant="h4"
             color="inherit"
-            align="center"
             noWrap
-            sx={{ flex: 1 }}
+            sx={{ 
+              flex: {xs: 1, md: 'none'},  
+              textAlign: {xs: 'center', md: 'left'} 
+            }}
+            pl={1} pr={3}
           >
             {title}
           </Typography>
-          <Profile />
+          {/* <Profile /> */}
+          <TabList isMdUp={isMdUp} />
         </Toolbar>
+        {isMdUp ? <></> :
         <Toolbar
           component="nav"
           variant="dense"
@@ -66,7 +100,7 @@ function Header(props) {
           {sections.map((section) => (
             <LinkURL key={section.title} to={section.url}>
               <Link color="inherit" noWrap sx={{ p: 1, flexShrink: 0 }}>
-                <Button variant="large">
+                <Button variant="large" onClick={() => window.scrollTo(0, 0)}>
                   <Typography variant="h5" color="black">
                     {section.title}
                   </Typography>
@@ -75,6 +109,7 @@ function Header(props) {
             </LinkURL>
           ))}
         </Toolbar>
+        }
       </HideOnScroll>
     </React.Fragment>
   );

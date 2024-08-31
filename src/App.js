@@ -30,15 +30,15 @@ import TechnologyPublic from './pages/technology/TechnologyPublic';
 import ResearchPublic from './pages/research/ResearchPublic';
 import ActivitiesPublic from './pages/activity/ActivitiesPublic';
 import MembersPublic from './pages/members/MembersPublic';
+import Registration from './pages/members/Registration';
 
 const sections = [
   { title: 'Home', url: '/home' },
-  { title: 'About', url: '/about' },
-  { title: 'Technologies', url: '/technology' },
+  // { title: 'About', url: '/about' },
+  // { title: 'Technologies', url: '/technology' },
   { title: 'Research', url: '/research' },
   { title: 'Activities', url: '/activities' },
   { title: 'Member', url: '/members' },
-  // { title: 'Registration', url: '/registration' },
 ];
 
 const noHeaderFooter = [
@@ -148,15 +148,15 @@ const ConditionalRoutes = () => {
       <Container maxWidth={checkException(noHeaderFooter, location.pathname) ? 'xl' : '2000px'} style={{padding: 0}}> 
         <ConditionalHeaderFooter title="IPAC Lab" sections={sections} urlPath={location.pathname}>
           <Routes>
-            <Route path="" element={<Blog />} />
-            <Route path="/preview-ipac-lab-web" element={<Blog />} />
             <Route path="/about" element={<About />} />
             <Route path="/technology" element={<TechnologyPublic />} />
             <Route path="/home" element={<Blog />} />
+            <Route path="/preview-ipac-lab-web" element={<Blog />} />
             <Route path="/research" element={<ResearchPublic />} />
             <Route path="/login" element={<SignInSide setToken={setToken} />} />
             <Route path="/activities" element={<ActivitiesPublic />} />
             <Route path="/members" element={<MembersPublic />} />
+            <Route path="/members/registration" element={<Registration />}/>
             <Route path="/signup" element={<SignUp />} />
             <Route path="/reset-pw" element={<ResetPassword />} />
             <Route path="/change-pw" element={<ChangePassword />} />
