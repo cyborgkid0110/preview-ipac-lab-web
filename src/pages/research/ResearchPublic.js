@@ -94,6 +94,22 @@ export default function ResearchPublic() {
             </Grid>
           ))}
         </Grid>
+        <Box pt={5} />  
+        <Grid container justifyContent='center'>
+          <Button variant='contained' sx={{
+            fontSize: '18px',
+            padding: 3,
+            borderRadius: 3,
+            backgroundColor: '#1a73e8',
+            backgroundImage: 'none',
+            ':hover': {
+              backgroundColor: '#2975CA',
+            },
+          }}
+          >
+            Load more
+          </Button>
+        </Grid>
         <Box sx={{paddingTop: {xs: '64px', md: '80px'}}} />
         <NewsList 
           title='Publications'

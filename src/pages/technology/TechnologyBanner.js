@@ -27,7 +27,7 @@ function TechnologyBanner(props) {
         backgroundPosition: 'center',
         backgroundImage: `url(${post.image})`,
         height: {xs: 300, md: 450, xl: 600},
-        borderRadius: 2
+        borderRadius: 2,
       }}
       style={{
         '--post-image': post.image,
@@ -43,6 +43,7 @@ function TechnologyBanner(props) {
           right: 0,
           left: 0,
           backgroundColor: 'rgba(0,0,0,.3)',
+          borderRadius: 2
         }}
       />
       <Grid container height='100%'>
