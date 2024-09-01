@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/preview-ipac-lab-web/static/css/main.303d0bbc.css",
-    "main.js": "/preview-ipac-lab-web/static/js/main.7d37dc26.js",
+    "main.js": "/preview-ipac-lab-web/static/js/main.8666303c.js",
     "static/media/logo_lab.png": "/preview-ipac-lab-web/static/media/logo_lab.08424fbfc89fa783b6bb.png",
     "index.html": "/preview-ipac-lab-web/index.html",
     "static/media/Square_gray.svg": "/preview-ipac-lab-web/static/media/Square_gray.9281a4f4a24a608d883cbade33e51590.svg",
     "main.303d0bbc.css.map": "/preview-ipac-lab-web/static/css/main.303d0bbc.css.map",
-    "main.7d37dc26.js.map": "/preview-ipac-lab-web/static/js/main.7d37dc26.js.map"
+    "main.8666303c.js.map": "/preview-ipac-lab-web/static/js/main.8666303c.js.map"
   },
   "entrypoints": [
     "static/css/main.303d0bbc.css",
-    "static/js/main.7d37dc26.js"
+    "static/js/main.8666303c.js"
   ]
 }
