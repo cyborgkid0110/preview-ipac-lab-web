@@ -1,15 +1,19 @@
 {
   "files": {
     "main.css": "/preview-ipac-lab-web/static/css/main.303d0bbc.css",
-    "main.js": "/preview-ipac-lab-web/static/js/main.9f9284ce.js",
+    "main.js": "/preview-ipac-lab-web/static/js/main.a9b48568.js",
     "static/media/logo_lab.png": "/preview-ipac-lab-web/static/media/logo_lab.08424fbfc89fa783b6bb.png",
+    "static/media/MoCAR_lab_logo.png": "/preview-ipac-lab-web/static/media/MoCAR_lab_logo.5d3766ed83cc8648610a.png",
+    "static/media/dr_hoang_duc_chinh.jpg": "/preview-ipac-lab-web/static/media/dr_hoang_duc_chinh.4326a5a276edbe01bc0a.jpg",
+    "static/media/EVSE_lab_logo.jpg": "/preview-ipac-lab-web/static/media/EVSE_lab_logo.3d363edbf146862479d4.jpg",
+    "static/media/EE_Lab_logo.jpg": "/preview-ipac-lab-web/static/media/EE_Lab_logo.2ede32e462b07e6e4e2d.jpg",
     "index.html": "/preview-ipac-lab-web/index.html",
     "static/media/Square_gray.svg": "/preview-ipac-lab-web/static/media/Square_gray.9281a4f4a24a608d883cbade33e51590.svg",
     "main.303d0bbc.css.map": "/preview-ipac-lab-web/static/css/main.303d0bbc.css.map",
-    "main.9f9284ce.js.map": "/preview-ipac-lab-web/static/js/main.9f9284ce.js.map"
+    "main.a9b48568.js.map": "/preview-ipac-lab-web/static/js/main.a9b48568.js.map"
   },
   "entrypoints": [
     "static/css/main.303d0bbc.css",
-    "static/js/main.9f9284ce.js"
+    "static/js/main.a9b48568.js"
   ]
 }
